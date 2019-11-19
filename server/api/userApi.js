@@ -8,6 +8,16 @@ var $sql = require('../sqlMap');
 var conn = mysql.createConnection(models.mysql);
 conn.connect();
 
+var jsonWrite = (res,ret) => {
+    if (typeof ret === 'undefined') {
+        res.json({
+            code:'300',
+            msg:'操作失败'
+        })
+    } else {
+        res.json({ret})
+    }
+}
 //增加用户的接口
 router.post('/addUser',(req,res) => {
   let sql = $sql.user.add;
@@ -21,17 +31,6 @@ router.post('/addUser',(req,res) => {
       jsonWrite(res,result)
     }
   })
-
-  var jsonWrite = (res,ret) => {
-    if (typeof ret === 'undefined') {
-      res.json({
-        code:'300',
-        msg:'操作失败'
-      })
-    } else {
-      res.json({ret})
-    }
-  }
 })
 
 module.exports = router;

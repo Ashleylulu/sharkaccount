@@ -31,7 +31,7 @@
       addUser(){
         let name = this.user;
         let age = this.age;
-        this.$axios.post('/api/user/addUser',{
+        this.axios.post('/api/user/addUser',{
           name:name,
           age:age
         }).then((res) => {
@@ -62,12 +62,16 @@
     min-width: 80px;
   }
   .int-par a{
+    display:inline-block;
     width: 100px;
+    text-align:center;
     background: #ccc;
     color: #fff;
     height: 30px;
+    line-height:30px;
     outline: none;
     border: none;
     cursor: pointer;
+    text-decoration:none;
   }
 </style>
