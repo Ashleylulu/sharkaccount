@@ -2,14 +2,15 @@
   <div>
     <h1>{{msg}}</h1>
     <form action="">
-      <input type="text" name="name" v-model="user" class="int">
+      <input type="text" name="name" v-model="user" class="int" placeholder="姓名">
+      <input type="text" name="age" v-model="age" class="int" placeholder="年龄">
+      <br>
       <a href="javascript:;" name="age" v-model="age" @click="add">提交</a>
     </form>
   </div>
 </template>
 <script>
   export default {
-    name: 'home',
     data () {
       return {
         msg: '首页',
@@ -19,12 +20,18 @@
     },
     methods:{
         add(){
-          this.$axios.post('/api/user/addUser',{
-              name:this.user,
-              age:this.age
-          }).then(res => {
-              console.log(res)
-          })
+            let data = {
+                name:this.user,
+                age:this.age
+            }
+            config.request('post','/api/user/addUser',data).then(res => {
+                if (res.data.code == config.successCode) {
+                    var data = res.data;
+                    console.log(data.entity)
+                }
+            }).catch(err => {
+                console.log(err)
+            })
         },
     }
   }
@@ -36,5 +43,6 @@
     outline: none;
     height: 20px;
     padding-left: 10px;
+    margin-bottom: 10px;
   }
 </style>

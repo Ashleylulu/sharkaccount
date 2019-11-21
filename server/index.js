@@ -10,6 +10,15 @@ const bodyParser = require('body-parser');//node.js 中间件，用于处理 JSO
 const express = require('express');
 const app = express();
 
+const jwt  = require('jsonwebtoken');
+let payload = {name:'lulu'};
+let secret = 'jam';
+let token = jwt.sign(payload,secret, {
+    expiresIn: 60*60*1
+});
+console.log(token)
+
+
 
 //<<body-parser模块的API>>
 //当请求体解析之后，解析值会被放到req.body属性中，当内容为空时候，为一个空对象{}
