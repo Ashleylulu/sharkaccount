@@ -1,0 +1,28 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    font-size:0;
+}
+.toast{
+    color: #fff;
+    background: rgba(0,0,0,.6);
+    min-width:10rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    margin-left: -5rem;
+    border-radius: 5px;
+    font-size: .8rem;
+}

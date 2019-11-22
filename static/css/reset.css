@@ -1,0 +1,461 @@
+
+
+
+/* html {
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	-webkit-tap-highlight:rgba(0, 0, 0, 0);
+	-webkit-text-size-adjust:none;
+	font-size: 16px;
+
+} */
+
+
+/* @media screen and (min-width:321px) and (max-width:375px){html{font-size:13.7px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:16px}}
+@media screen and (min-width:415px) and (max-width:639px){html{font-size:17.7px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:27px}}
+@media screen and (min-width:720px) and (max-width:749px){html{font-size:30.6px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:32px}}
+@media screen and (min-width:800px){html{font-size:25px}} */
+
+
+/* body {
+	font-size:13px;
+} */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+label {
+    cursor: pointer
+}
+
+input,
+button,
+select,
+textarea {
+    outline: none
+}
+
+textarea {
+    resize: none;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+blockquote,
+big,
+body,
+center,
+canvas,
+caption,
+cite,
+code,
+command,
+datalist,
+dd,
+del,
+details,
+dfn,
+dl,
+div,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+keygen,
+label,
+legend,
+li,
+meter,
+nav,
+menu,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+s,
+samp,
+section,
+small,
+span,
+source,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+tfoot,
+thead,
+th,
+tr,
+tdvideo,
+tt,
+u,
+ul,
+var {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none;
+    tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+}
+
+article,
+aside,
+footer,
+header,
+hgroup,
+nav,
+section,
+figure,
+figcaption {
+    display: block
+}
+
+
+/*html5璁剧疆*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+td,
+table,
+input,
+button,
+select,
+textarea,
+sub {
+    font-size: 1em
+}
+
+em,
+cite,
+address,
+optgroup {
+    font-style: normal
+}
+
+kbd,
+samp,
+code {
+    font-family: monospace
+}
+
+img,
+input,
+button,
+select,
+textarea {
+    vertical-align: middle
+}
+
+ul,
+ol,
+li {
+    list-style: none
+}
+
+img,
+fieldset {
+    border: 0
+}
+
+abbr,
+acronym {
+    cursor: help;
+    border-bottom: 1px dotted black
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border: 0
+}
+
+table th,
+table td {
+    border: 0
+}
+
+legend,
+hr {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+legend,
+hr,
+caption {
+    visibility: hidden;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    line-height: 0
+}
+
+strong {
+    font-weight: normal;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="tel"],
+input[type="number"] {
+    -webkit-appearance: none;
+}
+
+html {
+    /* width: 100%; */
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #ffffff;
+}
+
+iframe {
+    display: none;
+}
+
+a {
+    color: #333;
+}
+
+
+/*所有的关于下一步 保存的按钮*/
+
+.operation-btn {
+    margin: 0.9375rem 0;
+    background: #d61a39;
+    color: #fff;
+}
+
+.confirm .mui-btn-block {
+    font-size: 0.875rem;
+}
+
+.mui-bar-nav~.mui-content {
+    padding-top: 4.6rem;
+    padding-bottom: 2.1875rem;
+}
+
+
+/* 上拉加载样式修改 */
+
+.mint-loadmore-bottom {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0 !important;
+    height:auto !important;
+    line-height: normal !important;
+}
+.mint-loadmore-top{
+    margin-top: 0 !important;
+    height: auto !important;
+    line-height: normal !important;
+}
+
+/* 个人中心每一列 下划线对齐 */
+
+.mui-table-view-cell:after {
+    left: 0;
+}
+
+
+/* 购物车全选按钮初始rem布局 */
+
+.mui-checkbox.mui-left input[type=checkbox],
+.mui-radio.mui-left input[type=radio] {
+    left: 1.2rem;
+}
+
+
+/* 轮播图小点样式 */
+
+.mui-slider-indicator .mui-indicator {
+    background-color: #fff;
+    opacity: 0.3;
+}
+
+.mui-slider-indicator .mui-active.mui-indicator {
+    background-color: #aaa;
+}
+
+.mui-content {
+    background-color: #f4f4f4;
+}
+
+.mui-table-view:before {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 0px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: transparent;
+    top: 0px;
+}
+
+.mui-table-view:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 0px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: transparent;
+}
+
+.mui-bar-nav {
+    webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #fff;
+}
+
+.mui-input-group:before {
+    background-color: transparent;
+}
+
+.mui-input-group::after {
+    background-color: transparent;
+}
+
+.mui-loading {
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 43, 43, 0.1);
+}
+
+.mui-loading .mui-spinner {
+    /* margin: auto auto; */
+    margin-top: 67%;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.mui-bar .mui-icon {
+    padding-top: 0.7rem;
+}
+
+.mui-popup-backdrop {
+    z-index: 9999;
+}
+
+.mui-loading span {
+    display: inline-block;
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight: 500;
+}
+
+.mui-popup-button:after {
+    width: 0.2rem;
+}
+
+
+/* 修改默认a标签点击样式    消除mui-active  类 */
+
+.mui-table-view-cell.mui-active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+
+.mui-table-view-cell>a:not(.mui-btn).mui-active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+.v-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+}
