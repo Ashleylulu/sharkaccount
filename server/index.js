@@ -11,8 +11,8 @@ const express = require('express');
 const app = express();
 
 const jwt  = require('jsonwebtoken');
-let payload = {name:'lulu'};
-let secret = 'jam';
+let payload = {name:'lulu',uid:''};
+let secret = 'jam';//密钥
 let token = jwt.sign(payload,secret, {
     expiresIn: 60*60*1
 });
